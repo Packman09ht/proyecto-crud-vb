@@ -1,0 +1,14 @@
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/bin/Debug/net48/AcademiaIdiomas.LogicaNegocio.dll
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/bin/Debug/net48/AcademiaIdiomas.LogicaNegocio.pdb
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/bin/Debug/net48/AcademiaIdiomas.AccesoDatos.dll
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/bin/Debug/net48/AcademiaIdiomas.Entidades.dll
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/bin/Debug/net48/AcademiaIdiomas.Entidades.pdb
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/bin/Debug/net48/AcademiaIdiomas.AccesoDatos.pdb
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/LogicaNegocio.vbproj.AssemblyReference.cache
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/LogicaNegocio.AssemblyInfoInputs.cache
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/LogicaNegocio.AssemblyInfo.vb
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/LogicaNegocio.vbproj.CoreCompileInputs.cache
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/LogicaNegocio.vbproj.CopyComplete
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/AcademiaIdiomas.LogicaNegocio.dll
+/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/Debug/net48/AcademiaIdiomas.LogicaNegocio.pdb

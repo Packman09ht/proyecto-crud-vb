@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+KI/5hBqoKZmRjbj041OZQ7CpJMytRDpINgWx+p3ut2rfhgkMis5fgwh2GAmK2PENzD6wamJDfrNN3lrUrCsmA==",
+  "success": true,
+  "projectFilePath": "/home/no/Descargas/juan/AcademiaIdiomas/Presentacion/Presentacion.vbproj",
+  "expectedPackageFiles": [
+    "/home/no/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/no/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

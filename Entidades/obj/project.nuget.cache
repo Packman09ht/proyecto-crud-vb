@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fYLEptgAu+iiXfBVvuqvt8A7y3BoM8g3t1bRDH5oaU3fZhTS7efkGgZti7u8LuM+rIo2ymcmkXWgHwkpwRs30w==",
+  "success": true,
+  "projectFilePath": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj",
+  "expectedPackageFiles": [
+    "/home/no/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/no/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/bin/Debug/net48/AcademiaIdiomas.AccesoDatos.dll
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/bin/Debug/net48/AcademiaIdiomas.AccesoDatos.pdb
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/bin/Debug/net48/AcademiaIdiomas.Entidades.dll
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/bin/Debug/net48/AcademiaIdiomas.Entidades.pdb
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AccesoDatos.vbproj.AssemblyReference.cache
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AccesoDatos.AssemblyInfoInputs.cache
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AccesoDatos.AssemblyInfo.vb
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AccesoDatos.vbproj.CoreCompileInputs.cache
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AccesoDatos.vbproj.CopyComplete
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AcademiaIdiomas.AccesoDatos.dll
+/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/Debug/net48/AcademiaIdiomas.AccesoDatos.pdb
