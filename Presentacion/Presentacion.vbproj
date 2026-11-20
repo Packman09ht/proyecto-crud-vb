@@ -1,37 +1,27 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <StartupObject>Presentacion.My.MyApplication</StartupObject>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>AcademiaIdiomas</RootNamespace>
+    <MyType>Empty</MyType>
+    <OptionStrict>On</OptionStrict>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionInfer>On</OptionInfer>
+    <AssemblyName>AcademiaIdiomas</AssemblyName>
+    <StartupObject>AcademiaIdiomas.Program</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
-    <MyType>WindowsForms</MyType>
   </PropertyGroup>
-
   <ItemGroup>
-    <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
+    <Import Include="System.Drawing" />
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Entidad.vbproj" />
-    <ProjectReference Include="..\Negocio\Negocio.vbproj" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Update="My Project\Application.Designer.vb">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-    </Compile>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj" />
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.vbproj" />
+    <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.vbproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Update="My Project\Application.myapp">
-      <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
-  </ItemGroup>
-
 </Project>

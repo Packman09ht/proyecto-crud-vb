@@ -1,0 +1,209 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/no/Descargas/juan/AcademiaIdiomas/Presentacion/Presentacion.vbproj": {}
+  },
+  "projects": {
+    "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj",
+        "projectName": "AcademiaIdiomas.AccesoDatos",
+        "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj",
+        "packagesPath": "/home/no/.nuget/packages/",
+        "outputPath": "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/no/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj": {
+                "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.134/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj",
+        "projectName": "AcademiaIdiomas.Entidades",
+        "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj",
+        "packagesPath": "/home/no/.nuget/packages/",
+        "outputPath": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/no/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.134/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/LogicaNegocio.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/LogicaNegocio.vbproj",
+        "projectName": "AcademiaIdiomas.LogicaNegocio",
+        "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/LogicaNegocio.vbproj",
+        "packagesPath": "/home/no/.nuget/packages/",
+        "outputPath": "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/no/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj": {
+                "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj"
+              },
+              "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj": {
+                "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.134/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/no/Descargas/juan/AcademiaIdiomas/Presentacion/Presentacion.vbproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/no/Descargas/juan/AcademiaIdiomas/Presentacion/Presentacion.vbproj",
+        "projectName": "AcademiaIdiomas",
+        "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/Presentacion/Presentacion.vbproj",
+        "packagesPath": "/home/no/.nuget/packages/",
+        "outputPath": "/home/no/Descargas/juan/AcademiaIdiomas/Presentacion/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/no/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj": {
+                "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/AccesoDatos/AccesoDatos.vbproj"
+              },
+              "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj": {
+                "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/Entidades/Entidades.vbproj"
+              },
+              "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/LogicaNegocio.vbproj": {
+                "projectPath": "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/LogicaNegocio.vbproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.134/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

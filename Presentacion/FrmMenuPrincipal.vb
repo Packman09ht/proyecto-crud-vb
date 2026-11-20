@@ -1,107 +1,83 @@
-﻿Public Class FrmMenuPrincipal
-    Private Sub CerrarSesiónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+Imports System.ComponentModel
 
+<DesignerCategory("Code")>
+Public Class FrmMenuPrincipal
+    Inherits Form
 
-        Dim respuesta = MessageBox.Show(
-        "¿Desea cerrar la sesión?",
-        "Cerrar sesión",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question
-    )
+    Private ReadOnly accesos As New FlowLayoutPanel()
+    Private ReadOnly barraMenu As New MenuStrip()
+    Private ReadOnly mantenimientos As New ToolStripMenuItem("Mantenimientos")
 
-        If respuesta = DialogResult.Yes Then
+    Public Property CerroSesion As Boolean
 
-            Dim login As New FrmLogin()
-
-            login.Show()
-
-            Me.Close()
-
-        End If
-
-
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        MyBase.OnLoad(e)
+        ConstruirInterfaz()
     End Sub
 
-    Private Sub EstudiantesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstudiantesToolStripMenuItem.Click
+    Private Sub ConstruirInterfaz()
+        Text = "Academia de Idiomas"
+        Font = New Font("Segoe UI", 10.0F)
+        Size = New Size(960, 640)
+        StartPosition = FormStartPosition.CenterScreen
+        BackColor = Color.FromArgb(245, 247, 250)
 
-        Using formulario As New FrmEstudiantes()
-            formulario.ShowDialog(Me)
-        End Using
+        Dim usuario As Usuario = SesionActual.Usuario
+        Dim nombre As String = If(String.IsNullOrEmpty(usuario.NombrePersona), usuario.Username, usuario.NombrePersona)
+        Dim bienvenida As New Label With {
+            .Text = "Hola, " & nombre, .Font = New Font("Segoe UI", 20.0F, FontStyle.Bold), .AutoSize = True,
+            .ForeColor = Color.FromArgb(31, 78, 121), .Location = New Point(30, 50)
+        }
+        Dim rol As New Label With {.Text = "Rol: " & usuario.Rol & ". Elige qué quieres hacer.", .ForeColor = Color.Gray, .AutoSize = True, .Location = New Point(33, 96)}
 
+        accesos.Location = New Point(30, 140)
+        accesos.Size = New Size(880, 440)
+        accesos.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right Or AnchorStyles.Bottom
+        accesos.AutoScroll = True
+
+        Dim archivo As New ToolStripMenuItem("Archivo")
+        Dim cerrarSesion As New ToolStripMenuItem("Cerrar sesión")
+        AddHandler cerrarSesion.Click, AddressOf CerrarSesion_Click
+        Dim salir As New ToolStripMenuItem("Salir")
+        AddHandler salir.Click, Sub(remitente, argumentos) Close()
+        archivo.DropDownItems.AddRange(New ToolStripItem() {cerrarSesion, salir})
+        barraMenu.Items.Add(archivo)
+        barraMenu.Items.Add(mantenimientos)
+
+        AgregarAcceso("Estudiantes", "Registrar y consultar alumnos", Function() New FrmEstudiantes(), "Administrador", "Recepción")
+        AgregarAcceso("Docentes", "Profesores de la academia", Function() New FrmDocentes(), "Administrador")
+        AgregarAcceso("Cursos", "Idiomas, niveles y precios", Function() New FrmCursos(), "Administrador")
+        AgregarAcceso("Aulas", "Espacios y capacidad", Function() New FrmAulas(), "Administrador")
+        AgregarAcceso("Grupos", "Horarios, docentes y cupos", Function() New FrmGrupos(), "Administrador")
+        AgregarAcceso("Inscripciones", "Matricular estudiantes", Function() New FrmInscripciones(), "Administrador", "Recepción")
+        AgregarAcceso("Pagos", "Cobros y recibos", Function() New FrmPagos(), "Administrador", "Recepción")
+        AgregarAcceso("Usuarios", "Accesos al sistema", Function() New FrmUsuarios(), "Administrador")
+        AgregarAcceso("Dashboard", "Estadísticas y reportes", Function() New FrmDashboard())
+
+        MainMenuStrip = barraMenu
+        Controls.AddRange(New Control() {accesos, rol, bienvenida, barraMenu})
     End Sub
 
-    Private Sub ProfesoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProfesoresToolStripMenuItem.Click
-
-        Using formulario As New FrmProfesores()
-            formulario.ShowDialog(Me)
-        End Using
-
+    Private Sub AgregarAcceso(texto As String, descripcion As String, fabrica As Func(Of Form), ParamArray roles As String())
+        If roles.Length > 0 AndAlso Not roles.Contains(SesionActual.Rol) Then Return
+        Dim abrir As Action = Sub()
+                                  Using ventana As Form = fabrica()
+                                      ventana.ShowDialog(Me)
+                                  End Using
+                              End Sub
+        Dim boton As New Button With {
+            .Text = texto & Environment.NewLine & descripcion, .Size = New Size(205, 96), .Margin = New Padding(8),
+            .FlatStyle = FlatStyle.Flat, .BackColor = Color.White, .TextAlign = ContentAlignment.MiddleCenter
+        }
+        AddHandler boton.Click, Sub(remitente, argumentos) abrir()
+        accesos.Controls.Add(boton)
+        Dim opcion As New ToolStripMenuItem(texto)
+        AddHandler opcion.Click, Sub(remitente, argumentos) abrir()
+        mantenimientos.DropDownItems.Add(opcion)
     End Sub
 
-    Private Sub IdiomasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IdiomasToolStripMenuItem.Click
-        Using formulario As New FrmIdiomas()
-            formulario.ShowDialog(Me)
-        End Using
+    Private Sub CerrarSesion_Click(remitente As Object, e As EventArgs)
+        CerroSesion = True
+        Close()
     End Sub
-
-    Private Sub AulasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AulasToolStripMenuItem.Click
-        Using formulario As New FrmAulas()
-            formulario.ShowDialog(Me)
-        End Using
-    End Sub
-
-    Private Sub UsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuarioToolStripMenuItem.Click
-        Using formulario As New FrmUsuarios()
-            formulario.ShowDialog(Me)
-        End Using
-    End Sub
-
-    Private Sub CursosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CursosToolStripMenuItem.Click
-
-        Using formulario As New FrmCursos()
-            formulario.ShowDialog(Me)
-        End Using
-
-    End Sub
-
-    Private Sub InscripcionesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InscripcionesToolStripMenuItem.Click
-        Using formulario As New FrmInscripciones()
-            formulario.ShowDialog(Me)
-        End Using
-    End Sub
-
-    Private Sub PagosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PagosToolStripMenuItem.Click
-        Using formulario As New FrmPagos()
-            formulario.ShowDialog(Me)
-        End Using
-    End Sub
-
-    Private Sub EstadísticasToolStripMenuItem_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub DashboardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DashboardToolStripMenuItem.Click
-        Using formulario As New FrmDashboard()
-            formulario.ShowDialog(Me)
-        End Using
-    End Sub
-
-    Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
-
-
-        Dim respuesta = MessageBox.Show(
-        "¿Está seguro de que desea salir del sistema?",
-        "Salir",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question
-    )
-
-        If respuesta = DialogResult.Yes Then
-
-            Application.Exit()
-
-        End If
-
-    End Sub
-
 End Class

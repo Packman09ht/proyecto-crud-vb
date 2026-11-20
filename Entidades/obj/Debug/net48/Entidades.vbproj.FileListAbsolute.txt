@@ -1,0 +1,8 @@
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/bin/Debug/net48/AcademiaIdiomas.Entidades.dll
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/bin/Debug/net48/AcademiaIdiomas.Entidades.pdb
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/Debug/net48/Entidades.GeneratedMSBuildEditorConfig.editorconfig
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/Debug/net48/Entidades.AssemblyInfoInputs.cache
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/Debug/net48/Entidades.AssemblyInfo.vb
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/Debug/net48/Entidades.vbproj.CoreCompileInputs.cache
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/Debug/net48/AcademiaIdiomas.Entidades.dll
+/home/no/Descargas/juan/AcademiaIdiomas/Entidades/obj/Debug/net48/AcademiaIdiomas.Entidades.pdb

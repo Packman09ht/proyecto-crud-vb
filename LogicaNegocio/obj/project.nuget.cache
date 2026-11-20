@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GVnhD1dYIYpknJXe3rrrSsDEFPe/GTgOdmTebQofLrVJkMsMHj8IK5fJicGd0cVK5/EPvL7Yq3YpnTw3kSnDXw==",
+  "success": true,
+  "projectFilePath": "/home/no/Descargas/juan/AcademiaIdiomas/LogicaNegocio/LogicaNegocio.vbproj",
+  "expectedPackageFiles": [
+    "/home/no/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/no/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
